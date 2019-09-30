@@ -1,23 +1,17 @@
 # CPS410-F19-Team04
 Platforming Game - Labratory Escape
 
-##-Group Members-
+## Group Members
 
-Tyler Blanchard - blanc1tl
-
-Phillip Werries PhillipW-cmich
-
+Tyler Blanchard    - blanc1tl
+Phillip Werries    - PhillipW-cmich
 Collin Van Brabant - CollinCMU
+Andrew Taing       - taing1a
 
-Andrew Taing - TBD
-
-
--Key Users-
-
+## Key Users
 Our primary users of this software will be teens and adults over 14 years old. Our target platform is PC.
 
-
--5 Key Features-
+## 5 Key Features
 
 Our game will have multiple levels
 
