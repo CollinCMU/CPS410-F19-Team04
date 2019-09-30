@@ -4,7 +4,7 @@ Platforming Game - Labratory Escape
 ## Group Members
 
 Name | Username
----: | ---
+---: | :---
 Tyler Blanchard | blanc1tl
 Andrew Taing | taing1a
 Collin Van Brabant | CollinCMU
