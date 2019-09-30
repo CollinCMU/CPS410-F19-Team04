@@ -3,18 +3,13 @@ Platforming Game - Labratory Escape
 
 ## Group Members
 
-Tyler Blanchard    - blanc1tl
-
-Phillip Werries    - PhillipW-cmich
-
-Collin Van Brabant - CollinCMU
-
-Andrew Taing       - taing1a
-
-
 Name | Username
 --- | ---
+Tyler Blanchard | blanc1tl
+Andrew Taing | taing1a
 Collin Van Brabant | CollinCMU
+Phillip Werries | PhillipW-cmich
+
 
 ## Key Users
 
