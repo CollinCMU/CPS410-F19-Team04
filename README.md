@@ -11,6 +11,11 @@ Collin Van Brabant - CollinCMU
 
 Andrew Taing       - taing1a
 
+
+Name | Username
+--- | ---
+Collin Van Brabant | CollinCMU
+
 ## Key Users
 
 Our primary users of this software will be teens and adults over 14 years old. Our target platform is PC.
