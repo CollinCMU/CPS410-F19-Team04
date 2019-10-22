@@ -1,5 +1,5 @@
 # CPS410-F19-Team04
-Platforming Game - Labratory Escape
+Platforming Game - Blob's Escape
 
 ## Group Members
 
