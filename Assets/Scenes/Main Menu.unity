@@ -190,6 +190,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 236329676}
   optionsMenu: {fileID: 1304769036}
+  musicVolume: {fileID: 349107775}
+  mixer: {fileID: 24100000, guid: 4b541c972f74d2e46a394a9bf557e6fe, type: 2}
 --- !u!1 &349107773
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,13 +271,24 @@ MonoBehaviour:
   m_FillRect: {fileID: 1037546873}
   m_HandleRect: {fileID: 1469309240}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1304769038}
+        m_MethodName: updateMusicVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &362833704
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 511.99994, y: -448.7502}
+  m_AnchoredPosition: {x: 511.99994, y: -449.02255}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &916356507
@@ -1443,6 +1456,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 236329676}
   optionsMenu: {fileID: 1304769036}
+  musicVolume: {fileID: 349107775}
+  mixer: {fileID: 24100000, guid: 4b541c972f74d2e46a394a9bf557e6fe, type: 2}
 --- !u!114 &1304769039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2423,6 +2438,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 511.99994, y: -296.6751}
+  m_AnchoredPosition: {x: 511.99994, y: -296.81128}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}

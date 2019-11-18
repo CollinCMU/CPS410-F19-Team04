@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 //Author: Collin Van Brabant
 
@@ -9,6 +11,20 @@ public class MainMenuController : MonoBehaviour
 {
     public GameObject mainMenu;     //Gets the container for the main menu
     public GameObject optionsMenu;  //Gets the container for the options menu
+    public Slider musicVolume;
+    public AudioMixer mixer;
+
+    void Start()
+    {
+        musicVolume.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
+    }
+
+    public void updateMusicVolume()
+    {
+        float value = musicVolume.value;
+        PlayerPrefs.SetFloat("MusicVolume", value);
+        mixer.SetFloat("MusicVol", Mathf.Log10(value) * 20);
+    }
 
     //loads level select
     public void playGame(){
