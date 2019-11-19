@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Timecontroller : MonoBehaviour
 {
+    public GameObject pauseScreen;
     private bool paused = false;
 
     #region Monobehaviour API
@@ -13,12 +14,24 @@ public class Timecontroller : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (paused)
-                Time.timeScale = 1;
-            else
-                Time.timeScale = 0;
             paused = !paused;
         }
+
+        if (paused)
+        {
+            Time.timeScale = 0;
+            pauseScreen.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1;
+            pauseScreen.SetActive(false);
+        }
+    }
+
+    public void resume()
+    {
+        paused = false;
     }
 
     #endregion
