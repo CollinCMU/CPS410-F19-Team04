@@ -13,16 +13,16 @@ Phillip Werries | PhillipW-cmich
 
 ## Key Users
 
-Our primary users of this software will be teens and adults over 14 years old. Our target platform is PC.
+PC gamers over the age of 14.
 
-## 5 Key Features
+## Key Features
 
-Our game will have multiple levels
+Our game has 4 unique and exciting levels
 
-We plan on having powerups or upgrades
+Functioning Main Menu, Level Select, Options Menu
 
-We will have a compelling story
+Tricky platforming challenges
 
-Our game will be focused on platforming with light puzzle and combat elements
+Hazards in the form of spikes and bottomless pits
 
-Our game will have an exciting ending
+Fully animated player character
