@@ -189,7 +189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37768448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6555786, y: 0.965971, z: -19.898842}
+  m_LocalPosition: {x: 1.6478138, y: 0.965971, z: -19.898842}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -239,7 +239,9 @@ GameObject:
   - component: {fileID: 249441250}
   - component: {fileID: 249441252}
   - component: {fileID: 249441251}
-  m_Layer: 0
+  - component: {fileID: 249441254}
+  - component: {fileID: 249441253}
+  m_Layer: 10
   m_Name: Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -921,9 +923,13 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 67
     m_Data: {fileID: 11400000, guid: ee3314dad66fe1a4ca23b419f2ef4fa0, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 67
     m_Data: {fileID: 21300000, guid: 87c48dd5b87efac4fa68efeb03decbf0, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 67
     m_Data:
@@ -969,6 +975,33 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &249441253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249441249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48414ea810a9e1248ac9ce27fc2d555e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawn: {fileID: 1945244791}
+--- !u!19719996 &249441254
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249441249}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.5}
 --- !u!1 &265399990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,10 +1130,10 @@ PolygonCollider2D:
   m_AutoTiling: 1
   m_Points:
     m_Paths:
-    - - {x: 66.54725, y: 9.886615}
+    - - {x: 66, y: 10}
       - {x: -15.6, y: 10}
-      - {x: -15.6, y: 5.9858913}
-      - {x: 66.04755, y: 6.517275}
+      - {x: -15.6, y: 6}
+      - {x: 66, y: 6}
 --- !u!4 &323722362
 Transform:
   m_ObjectHideFlags: 0
@@ -1245,7 +1278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612803092}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.0276423, y: -2.331799, z: -19.898842}
+  m_LocalPosition: {x: -5.027622, y: -2.331799, z: -19.898842}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2110107507}
@@ -4481,7 +4514,7 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 65.3, y: 10}
-      - {x: 45, y: 10}
+      - {x: 0, y: 10}
       - {x: 40, y: 10}
       - {x: 40, y: 18.6}
       - {x: 7, y: 18.6}
@@ -4572,7 +4605,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945244790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: -9.622346}
+  m_LocalPosition: {x: -5, y: -1.17, z: -9.622346}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

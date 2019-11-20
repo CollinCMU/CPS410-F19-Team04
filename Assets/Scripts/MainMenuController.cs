@@ -26,8 +26,9 @@ public class MainMenuController : MonoBehaviour
         mixer.SetFloat("MusicVol", Mathf.Log10(value) * 20);
     }
 
-    //loads level select
+    //loads level select, also used to quit during a level
     public void playGame(){
+        Time.timeScale = 1; //this fixes a bug: quitting midlevel leaves time frozen
         SceneManager.LoadScene("Level Select");
     }
 

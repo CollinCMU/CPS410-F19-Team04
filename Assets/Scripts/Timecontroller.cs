@@ -15,23 +15,24 @@ public class Timecontroller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             paused = !paused;
-        }
 
-        if (paused)
-        {
-            Time.timeScale = 0;
-            pauseScreen.SetActive(true);
-        }
-        else
-        {
-            Time.timeScale = 1;
-            pauseScreen.SetActive(false);
+            if (paused)
+            {
+                Time.timeScale = 0;
+                pauseScreen.SetActive(true);
+            }
+            else
+            {
+                Time.timeScale = 1;
+                pauseScreen.SetActive(false);
+            }
         }
     }
 
     public void resume()
     {
-        paused = false;
+        Time.timeScale = 1;
+        pauseScreen.SetActive(false);
     }
 
     #endregion
