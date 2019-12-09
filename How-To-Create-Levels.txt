@@ -1,0 +1,29 @@
+I know GitHub can be iffy with Unity projects, so here is a zipped version of the project folder that shouldn't have any issues when you open it.
+
+https://drive.google.com/file/d/1ynClFBdklWxSjQtKPJuxuXclja3uO-vw/view?usp=sharing
+
+It was made with Unity version 2018.4.12f1. I'm not sure if other versions of Unity will work but feel free to try.
+
+I'm also not sure how experienced with Unity you are, but I will try to make things clear and brief.
+Hopefully by looking through the Hierarchies of the different scenes in Unity, you should get a better idea of how the game and levels are structured.
+
+You can create a level by creating a new empty scene, or by copying and pasting an existing level and change/move/delete things as you please. 
+
+You can draw the ground and platforms using the Tile Palette (Window -> 2D -> Tile Palette)
+Just be sure that you draw spikes on the "Spikes" tilemap and everything else on the "Ground" tilemap.
+
+Inside the prefabs folder, you'll see Player, Door, and checkpointFlag. These will work right out of the box, so just drag them into the scene. 
+Just be sure there is a "Spawnpoint" gameobject in the scene for the checkpoint to work. 
+
+The "CameraBoundary" object in the hierarchy does what the name implies. It's a polygon collider that limits the camera movement.
+You can click the Edit Collider button in the inspector to change where the camera can go.
+
+To add levels to the level select, look at the "Level Select" scene's hierarchy.
+In (Canvas -> Level Select -> LevelContainer), each Level object is actually a button with an On Click script attached.
+Inside the string field, just type in the name of the scene that you wish to load when the button is clicked.
+
+That should be a pretty good start, I hope you found it helpful.
+
+I wish you luck on your exams this semester, and I hope you have a nice winter break.
+
+Best, Collin V.
